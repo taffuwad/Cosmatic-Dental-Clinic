@@ -1,0 +1,424 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: auto;
+}
+
+/* Hide scrollbar visually but keep scrolling */
+html {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE / old Edge */
+}
+html::-webkit-scrollbar {
+  display: none;                  /* Chrome, Safari, newer Edge */
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: #ffffff;
+  color: #111111;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #111111;
+  color: #ffffff;
+}
+
+.reveal-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.05em;
+}
+.reveal-inner {
+  display: block;
+  will-change: transform;
+}
+
+
+h1,h2,h3{
+    text-transform: uppercase;
+}
+/* ---------- Treatment rows ---------- */
+.treatment-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: padding-left 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.treatment-row:hover,
+.treatment-row:focus-visible {
+  padding-left: 24px;
+  outline: none;
+}
+.treatment-row:first-child {
+  border-top: 1px solid #e5e7eb;
+}
+.treatment-title {
+  font-size: clamp(1.75rem, 4vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  transition: color 0.3s ease;
+}
+.treatment-row:hover .treatment-title {
+  color: #111111;
+}
+.treatment-arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  transition:
+    opacity 0.3s ease,
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.treatment-row:hover .treatment-arrow {
+  opacity: 1;
+  transform: translate(4px, -4px);
+}
+
+/* ---------- Floating hover image (Trattamenti) ---------- */
+.hover-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 380px;
+  z-index: 45;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+  transform: translate3d(-9999px, -9999px, 0);
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease;
+}
+.hover-img.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.hover-img__inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    opacity 0.35s ease,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hover-img.is-visible .hover-img__inner {
+  opacity: 1;
+  transform: scale(1);
+}
+.hover-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- FAQ ---------- */
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 0;
+  text-align: left;
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: opacity 0.25s ease;
+}
+.faq-trigger:hover {
+  opacity: 0.6;
+}
+.faq-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.faq-icon::before,
+.faq-icon::after {
+  content: "";
+  position: absolute;
+  background: #111111;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.faq-icon::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  transform: translateY(-50%);
+}
+.faq-icon::after {
+  left: 50%;
+  top: 0;
+  width: 1.5px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+.faq-item.is-open .faq-icon::after {
+  transform: translateX(-50%) rotate(90deg);
+}
+.faq-panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.faq-panel-inner {
+  padding: 0 0 28px;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #6b7280;
+  max-width: 65ch;
+}
+
+/* ---------- Menu overlay ---------- */
+.menu-overlay {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+  pointer-events: none;
+}
+.menu-overlay.is-open {
+  clip-path: inset(0 0 0% 0);
+  pointer-events: auto;
+}
+.menu-link {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.3s ease;
+}
+.menu-overlay.is-open .menu-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-overlay.is-open .menu-link:nth-child(1) {
+  transition-delay: 0.15s;
+}
+.menu-overlay.is-open .menu-link:nth-child(2) {
+  transition-delay: 0.22s;
+}
+.menu-overlay.is-open .menu-link:nth-child(3) {
+  transition-delay: 0.29s;
+}
+.menu-overlay.is-open .menu-link:nth-child(4) {
+  transition-delay: 0.36s;
+}
+.menu-overlay.is-open .menu-link:nth-child(5) {
+  transition-delay: 0.43s;
+}
+.menu-link:hover {
+  color: #6b7280;
+}
+
+/* ---------- Hamburger ---------- */
+.burger-line {
+  display: block;
+  width: 26px;
+  height: 1px;
+  background: #111111;
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.25s ease;
+}
+.burger-line + .burger-line {
+  margin-top: 6px;
+}
+.burger.is-open .burger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.burger.is-open .burger-line:nth-child(2) {
+  opacity: 0;
+}
+.burger.is-open .burger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ---------- Form ---------- */
+.input-min {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #d1d5db;
+  border-radius: 0;
+  padding: 14px 0;
+  font-size: 0.95rem;
+  color: #111111;
+  transition: border-color 0.3s ease;
+}
+.input-min::placeholder {
+  color: #9ca3af;
+}
+.input-min:focus {
+  outline: none;
+  border-bottom-color: #111111;
+}
+
+.check-min {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #9ca3af;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+.check-min:checked {
+  background: #111111;
+  border-color: #111111;
+}
+.check-min:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+/* ---------- Footer watermark ---------- */
+.watermark {
+  font-size: clamp(4rem, 18vw, 18rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.8;
+  color: #d1d5db;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal-inner {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ---------- Floating process images ---------- */
+.float-img {
+  position: absolute;
+  width: clamp(60px, 8vw, 110px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+  opacity: 0;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+.float-a {
+  top: 2%;
+  left: 4%;
+}
+.float-b {
+  top: 18%;
+  right: 6%;
+}
+.float-c {
+  top: 38%;
+  left: 2%;
+}
+.float-d {
+  top: 55%;
+  right: 3%;
+}
+.float-e {
+  top: 72%;
+  left: 6%;
+}
+.float-f {
+  top: 88%;
+  right: 8%;
+}
+@media (max-width: 767px) {
+  .float-img {
+    display: none;
+  }
+}
+
+/* ---------- Heading sizes ---------- */
+.hero-title {
+  font-size: clamp(3rem, 11vw, 9rem);
+  max-width: 100%;
+}
+.intro-title {
+  font-size: clamp(2.5rem, 5.5vw, 5rem);
+}
+.direction-title {
+  font-size: clamp(2.5rem, 5.5vw, 5rem);
+}
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: clamp(2.5rem, 13vw, 4rem);
+  }
+  .intro-title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+  .direction-title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+}
