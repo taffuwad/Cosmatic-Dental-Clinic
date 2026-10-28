@@ -262,6 +262,52 @@ h1,h2,h3{
 }
 
 /* ---------- Hamburger ---------- */
+.button-con {
+  align-items: center;
+  gap: 12px;
+}
+.appointment-link {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  border: 1px solid #176a4b;
+  border-radius: 9999px;
+  background: #176a4b;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: 0 5px 16px rgb(23 106 75 / 20%);
+  mix-blend-mode: normal;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+.appointment-link:hover {
+  transform: scale(1.05);
+  border-color: #10583d;
+  background: #10583d;
+  box-shadow: 0 8px 20px rgb(23 106 75 / 28%);
+}
+.appointment-link:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px #176a4b;
+}
+.appointment-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
 .burger-line {
   display: block;
   width: 26px;
@@ -282,6 +328,20 @@ h1,h2,h3{
 }
 .burger.is-open .burger-line:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 480px) {
+  .button-con {
+    gap: 8px;
+  }
+  .appointment-link {
+    width: 44px;
+    min-height: 44px;
+    padding: 0;
+  }
+  .appointment-label {
+    display: none;
+  }
 }
 
 /* ---------- Form ---------- */
