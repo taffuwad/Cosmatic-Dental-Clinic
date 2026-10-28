@@ -1,12 +1,12 @@
-<!doctype html>
-<html lang="it">
+﻿<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio Dr. Angelucci — Odontoiatria Specialistica</title>
+    <title>Austin Artistic Dental — Specialized Dentistry</title>
     <meta
       name="description"
-      content="Studio Dentistico Dr. Angelucci — Odontoiatria specialistica, implantologia, ortodonzia invisibile a Terracina."
+      content="Austin Artistic Dental — Specialized dentistry, dental implants, clear aligners, and cosmetic oral care in Austin, Texas."
     />
 
     <link rel="stylesheet" href="style.css" />
@@ -56,9 +56,14 @@
       >
         <a
           href="#home"
-          class="text-[15px] md:text-base font-medium tracking-tight text-white"
+          class="site-logo flex items-center"
+          aria-label="Austin Artistic Dental"
         >
-          Studio Dr. Angelucci
+          <img
+            src="assets/others/logo.png"
+            alt="Austin Artistic Dental"
+            class="site-logo-img"
+          />
         </a>
 
         <div class="button-con flex">
@@ -87,7 +92,7 @@
           <button
           id="burger"
           class="burger relative z-50 flex flex-col items-end justify-center w-10 h-10"
-          aria-label="Apri menu"
+          aria-label="Open menu"
           aria-expanded="false"
           aria-controls="menuOverlay"
         >
@@ -109,13 +114,17 @@
       <div
         class="flex items-center justify-between px-6 md:px-10 lg:px-14 pt-6 md:pt-8"
       >
-        <span class="text-[15px] md:text-base font-medium tracking-tight"
-          >Studio Dr. Angelucci</span
-        >
+        <a href="#home" class="flex items-center" aria-label="Austin Artistic Dental">
+          <img
+            src="assets/others/logo.png"
+            alt="Austin Artistic Dental"
+            class="h-8 md:h-9 w-auto object-contain"
+          />
+        </a>
         <button
           id="closeMenu"
           class="w-10 h-10 flex items-center justify-center"
-          aria-label="Chiudi menu"
+          aria-label="Close menu"
         >
           <i data-lucide="x" class="w-6 h-6"></i>
         </button>
@@ -132,22 +141,22 @@
         <a
           href="#studio"
           class="menu-link text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight2"
-          >Studio</a
+          >About</a
         >
         <a
           href="#trattamenti"
           class="menu-link text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight2"
-          >Trattamenti</a
+          >Treatments</a
         >
         <a
           href="#news"
           class="menu-link text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight2"
-          >News</a
+          >Clinical Team</a
         >
         <a
           href="#contatti"
           class="menu-link text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight2"
-          >Contatti</a
+          >Contact</a
         >
       </div>
 
@@ -155,12 +164,12 @@
         class="px-6 md:px-14 lg:px-20 pb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-sm text-white/60"
       >
         <div>
-          <p>Via Giacomo Leopardi 34, Terracina</p>
-          <p>+380 656 6959</p>
+          <p>Austin, Texas</p>
+          <p>+1 (234) 567-890</p>
         </div>
         <div class="sm:text-right">
-          <p>Lun – Sab · Su appuntamento</p>
-          <p>amministrazione@studiodentisticodrangelucci.it</p>
+          <p>Mon – Sat · By appointment</p>
+          <p>contact@austinartisticdental.com</p>
         </div>
       </div>
     </div>
@@ -180,8 +189,8 @@
       >
         <div class="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=2200&q=85"
-            alt="Dentista che lavora su un paziente in uno studio moderno"
+            src="assets/others/heroBg.jpg"
+            alt="Dentist treating a patient in a modern dental clinic"
             class="w-full h-full object-cover"
             data-critical
             fetchpriority="high"
@@ -199,12 +208,12 @@
           >
             <span class="block overflow-hidden"
               ><span class="reveal-inner block" data-hero-line
-                >La cura</span
+                >The Art</span
               ></span
             >
             <span class="block overflow-hidden"
               ><span class="reveal-inner block" data-hero-line
-                >del Sorriso</span
+                >of Your Smile</span
               ></span
             >
           </h1>
@@ -223,7 +232,7 @@
               >
                 <img
                   src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1000&q=85"
-                  alt="Dentista con paziente in studio"
+                  alt="Dentist with patient in consultation"
                   class="w-full h-full object-cover"
                   data-critical
                   loading="lazy"
@@ -237,14 +246,14 @@
               >
                 <span class="block overflow-hidden"
                   ><span class="reveal-inner block" data-intro-line
-                    >Odontoiatria</span
+                    >Specialized</span
                   ></span
                 >
                 <span class="block overflow-hidden"
                   ><span
                     class="reveal-inner block text-[#B9BDC4]"
                     data-intro-line
-                    >specialistica.</span
+                    >dentistry.</span
                   ></span
                 >
               </h2>
@@ -252,18 +261,18 @@
               <p
                 class="mt-8 text-[15px] leading-[1.75] text-muted max-w-[340px] md:ml-auto"
               >
-                A Terracina lo Studio Dentistico Dr. Angelucci si occupa della
-                salute orale e del benessere del paziente con un approccio
-                multidisciplinare, unendo competenze specialistiche, tecnologie
-                avanzate e percorsi personalizzati, con un'attenzione autentica
-                alla persona e al suo sorriso.
+                In Austin, Austin Artistic Dental is dedicated to oral health
+                and patient well-being through a multidisciplinary approach,
+                combining specialized clinical expertise, advanced technology,
+                and personalized treatment plans with genuine care for every
+                individual and their smile.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- TRATTAMENTI -->
+      <!-- TREATMENTS -->
       <section
         id="trattamenti"
         class="relative bg-paper pb-20 md:pb-28 lg:pb-32"
@@ -271,10 +280,10 @@
         <div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-14">
           <div class="flex items-center justify-between mb-10 md:mb-14">
             <span class="text-[11px] tracking-ultra uppercase text-muted"
-              >Trattamenti</span
+              >Treatments</span
             >
             <span class="text-[11px] tracking-ultra uppercase text-muted"
-              >06 Aree cliniche</span
+              >06 Clinical Areas</span
             >
           </div>
 
@@ -284,7 +293,7 @@
               class="treatment-row"
               data-img="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=85"
             >
-              <span class="treatment-title">Implantologia</span>
+              <span class="treatment-title">Dental Implants</span>
               <span class="treatment-arrow">
                 <svg
                   width="20"
@@ -306,7 +315,7 @@
               class="treatment-row"
               data-img="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=800&q=85"
             >
-              <span class="treatment-title">Ortodonzia Invisibile</span>
+              <span class="treatment-title">Invisible Orthodontics</span>
               <span class="treatment-arrow">
                 <svg
                   width="20"
@@ -318,7 +327,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  <path d="M7 17L17 7H8M17 7v9" />
                 </svg>
               </span>
             </a>
@@ -328,7 +337,7 @@
               class="treatment-row"
               data-img="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=85"
             >
-              <span class="treatment-title">Sbiancamento Dentale</span>
+              <span class="treatment-title">Teeth Whitening</span>
               <span class="treatment-arrow">
                 <svg
                   width="20"
@@ -340,7 +349,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  <path d="M7 17L17 7H8M17 7v9" />
                 </svg>
               </span>
             </a>
@@ -350,7 +359,7 @@
               class="treatment-row"
               data-img="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=85"
             >
-              <span class="treatment-title">Conservativa</span>
+              <span class="treatment-title">Restorative Dentistry</span>
               <span class="treatment-arrow">
                 <svg
                   width="20"
@@ -362,7 +371,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <path d="M7 17L17 7M17 7H8M17 7v9" />
+                  <path d="M7 17L17 7H8M17 7v9" />
                 </svg>
               </span>
             </a>
@@ -370,9 +379,9 @@
             <a
               href="#"
               class="treatment-row"
-              data-img="https://images.unsplash.com/photo-1609840112991-06a96c6a02b8?auto=format&fit=crop&w=800&q=85"
+              data-img="https://www.pellafamilydentistry.com/resourcefiles/fullwidth-single-snippet-image/periodontics.jpg"
             >
-              <span class="treatment-title">Parodontologia</span>
+              <span class="treatment-title">Periodontics</span>
               <span class="treatment-arrow">
                 <svg
                   width="20"
@@ -394,7 +403,7 @@
               class="treatment-row"
               data-img="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=800&q=85"
             >
-              <span class="treatment-title">Igiene e Prevenzione</span>
+              <span class="treatment-title">Hygiene & Prevention</span>
               <span class="treatment-arrow">
                 <svg
                   width="20"
@@ -414,7 +423,7 @@
         </div>
       </section>
 
-      <!-- DIREZIONE CLINICA -->
+      <!-- CLINICAL DIRECTION -->
       <section
         id="news"
         class="relative bg-paper py-20 md:py-28 lg:py-32 overflow-hidden"
@@ -429,22 +438,22 @@
               >
                 <span class="block overflow-hidden"
                   ><span class="reveal-inner block" data-dir-line
-                    >La direzione</span
+                    >Clinical</span
                   ></span
                 >
                 <span class="block overflow-hidden"
                   ><span class="reveal-inner block" data-dir-line
-                    >clinica dello</span
+                    >leadership at</span
                   ></span
                 >
                 <span class="block overflow-hidden"
                   ><span class="reveal-inner block" data-dir-line
-                    >Studio</span
+                    >Austin Artistic</span
                   ></span
                 >
                 <span class="block overflow-hidden"
                   ><span class="reveal-inner block" data-dir-line
-                    >Angelucci.</span
+                    >Dental.</span
                   ></span
                 >
               </h2>
@@ -452,11 +461,10 @@
               <p
                 class="mt-8 text-[14px] leading-[1.75] text-muted max-w-[320px]"
               >
-                La direzione clinica dello Studio è guidata dal Dottor
-                Angelucci, che coordina il team multidisciplinare e definisce i
-                protocolli di diagnosi e cura. Ogni percorso è pianificato con
-                precisione, grazie a tecnologie digitali e a una visione clinica
-                integrata.
+                Clinical direction is led by Dr. Marco Angelucci, who coordinates
+                our multidisciplinary team and sets uncompromising standards for
+                diagnosis and care. Every treatment journey is meticulously planned
+                using advanced digital technologies and an integrated clinical vision.
               </p>
             </div>
 
@@ -466,7 +474,7 @@
               >
                 <img
                   src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=85"
-                  alt="Team clinico al lavoro"
+                  alt="Clinical dental team at work"
                   class="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -476,7 +484,7 @@
         </div>
       </section>
 
-      <!-- PROCESSO / VALORI -->
+      <!-- PROCESS / VALUES -->
       <section class="relative bg-paper pb-20 md:pb-28 lg:pb-32">
         <div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-14">
           <div
@@ -522,30 +530,27 @@
             <p
               class="process-line text-[clamp(1.4rem,3.4vw,2.6rem)] font-normal tracking-tight2 leading-[1.15] text-ink max-w-[820px] opacity-100"
             >
-              Il percorso inizia da un'attenta comprensione del quadro clinico.
+              Every journey begins with a thoughtful understanding of your clinical profile.
             </p>
             <p
               class="process-line text-[clamp(1.4rem,3.4vw,2.6rem)] font-normal tracking-tight2 leading-[1.15] text-ink max-w-[820px] opacity-30"
             >
-              Il percorso inizia da un'attenta comprensione del quadro clinico.
+              Every journey begins with a thoughtful understanding of your clinical profile.
             </p>
             <p
               class="process-line text-[clamp(1.4rem,3.4vw,2.6rem)] font-normal tracking-tight2 leading-[1.15] text-ink max-w-[900px] opacity-100"
             >
-              Le tecnologie digitali ci permettono di pianificare il trattamento
-              con maggiore precisione.
+              Advanced digital technologies enable us to plan every treatment with supreme precision.
             </p>
             <p
               class="process-line text-[clamp(1.4rem,3.4vw,2.6rem)] font-normal tracking-tight2 leading-[1.15] text-ink max-w-[900px] opacity-30"
             >
-              Le tecnologie digitali ci permettono di pianificare il trattamento
-              con maggiore precisione.
+              Advanced digital technologies enable us to plan every treatment with supreme precision.
             </p>
             <p
               class="process-line text-[clamp(1.4rem,3.4vw,2.6rem)] font-normal tracking-tight2 leading-[1.15] text-ink max-w-[900px] opacity-100"
             >
-              Il lavoro condiviso dell'équipe rende il percorso di cura più
-              completo e coordinato.
+              Close interdisciplinary teamwork makes every stage of your care seamless and complete.
             </p>
           </div>
         </div>
@@ -556,10 +561,10 @@
         <div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-14">
           <div class="flex items-center justify-between mb-10 md:mb-14">
             <span class="text-[11px] tracking-ultra uppercase text-muted"
-              >Il Team</span
+              >Our Team</span
             >
             <span class="text-[11px] tracking-ultra uppercase text-muted"
-              >Specialisti</span
+              >Specialists</span
             >
           </div>
 
@@ -580,7 +585,7 @@
                   Dr. Marco Angelucci
                 </h3>
                 <p class="text-sm text-muted mt-1">
-                  Direttore Clinico · Implantologia
+                  Clinical Director · Implantology
                 </p>
               </div>
             </div>
@@ -598,7 +603,7 @@
                 <h3 class="text-xl md:text-2xl font-medium tracking-tight">
                   Dr. Roberto Di Vita
                 </h3>
-                <p class="text-sm text-muted mt-1">Ortodonzia Invisibile</p>
+                <p class="text-sm text-muted mt-1">Invisible Orthodontics</p>
               </div>
             </div>
 
@@ -606,16 +611,16 @@
               <div class="aspect-[3/4] overflow-hidden rounded-sm bg-soft">
                 <img
                   src="assets/peoples/doc4.jpg"
-                  alt="Dr.ssa Elena Sokolova"
+                  alt="Dr. Elena Sokolova"
                   class="w-full h-full object-cover"
                   loading="lazy"
                 />
               </div>
               <div class="mt-5">
                 <h3 class="text-xl md:text-2xl font-medium tracking-tight">
-                  Dr.ssa Elena Sokolova
+                  Dr. Elena Sokolova
                 </h3>
-                <p class="text-sm text-muted mt-1">Parodontologia · Igiene</p>
+                <p class="text-sm text-muted mt-1">Periodontics · Dental Hygiene</p>
               </div>
             </div>
           </div>
@@ -629,29 +634,28 @@
             <div class="md:col-span-4">
               <span
                 class="text-[11px] tracking-ultra uppercase text-muted block mb-4"
-                >Domande frequenti</span
+                >Frequently Asked Questions</span
               >
               <h2
                 class="text-4xl md:text-5xl font-normal tracking-tight2 leading-[0.95]"
               >
-                Tutto quello che c'è da sapere.
+                Everything you need to know.
               </h2>
             </div>
 
             <div class="md:col-span-8" id="faqList">
               <div class="faq-item">
                 <button class="faq-trigger" type="button" aria-expanded="false">
-                  <span>Gli impianti dentali sono dolorosi?</span>
+                  <span>Are dental implants painful?</span>
                   <span class="faq-icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-panel">
                   <div class="faq-panel-inner">
-                    L'inserimento dell'impianto avviene in anestesia locale e
-                    nella maggior parte dei casi è completamente indolore. Nei
-                    giorni successivi può verificarsi un lieve gonfiore,
-                    gestibile con la terapia prescritta. Il nostro protocollo
-                    prevede controlli ravvicinati per accompagnare ogni fase
-                    della guarigione.
+                    Implant placement is performed under local anesthesia and is
+                    completely painless in most cases. Any minor discomfort or
+                    swelling in the days following can be easily managed with
+                    prescribed aftercare. Our clinical team schedules attentive
+                    follow-ups to support every stage of healing.
                   </div>
                 </div>
               </div>
@@ -659,47 +663,46 @@
               <div class="faq-item">
                 <button class="faq-trigger" type="button" aria-expanded="false">
                   <span
-                    >Quanto dura un trattamento di ortodonzia invisibile?</span
+                    >How long does clear aligner treatment take?</span
                   >
                   <span class="faq-icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-panel">
                   <div class="faq-panel-inner">
-                    La durata varia in base alla complessità del caso, ma nella
-                    maggior parte dei trattamenti si aggira tra i 6 e i 18 mesi.
-                    Durante la prima visita definiamo insieme un piano
-                    dettagliato con simulazione digitale del risultato finale.
+                    Treatment duration depends on case complexity, but typically
+                    ranges between 6 and 18 months. During your first visit, we
+                    design a detailed treatment plan featuring a digital 3D preview
+                    of your final smile.
                   </div>
                 </div>
               </div>
 
               <div class="faq-item">
                 <button class="faq-trigger" type="button" aria-expanded="false">
-                  <span>Ogni quanto è consigliata l'igiene professionale?</span>
+                  <span>How often is professional dental cleaning recommended?</span>
                   <span class="faq-icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-panel">
                   <div class="faq-panel-inner">
-                    In genere ogni 6 mesi, ma la frequenza può variare in base
-                    alla salute parodontale, alla presenza di impianti o
-                    apparecchi ortodontici e alle abitudini quotidiane.
-                    Consigliamo una valutazione personalizzata durante la prima
-                    visita.
+                    We typically recommend a professional cleaning every 6 months,
+                    though intervals may vary based on periodontal condition,
+                    implants, orthodontic appliances, and personal lifestyle.
+                    We provide personalized guidance during your examination.
                   </div>
                 </div>
               </div>
 
               <div class="faq-item">
                 <button class="faq-trigger" type="button" aria-expanded="false">
-                  <span>Come funziona la prima visita?</span>
+                  <span>What happens during the first consultation?</span>
                   <span class="faq-icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-panel">
                   <div class="faq-panel-inner">
-                    La prima visita è un momento di ascolto e diagnosi.
-                    Comprende un esame clinico completo, eventuali radiografie
-                    digitali e una discussione approfondita delle opzioni di
-                    trattamento, con un preventivo trasparente e senza impegno.
+                    Your first visit is dedicated to comprehensive assessment and
+                    understanding your goals. It includes a thorough clinical exam,
+                    digital diagnostics as needed, and an in-depth review of
+                    treatment options with transparent, no-obligation pricing.
                   </div>
                 </div>
               </div>
@@ -708,40 +711,40 @@
         </div>
       </section>
 
-      <!-- CONTATTI -->
+      <!-- CONTACT -->
       <section id="contatti" class="relative bg-cream py-20 md:py-28 lg:py-32">
         <div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-14">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12">
             <div class="md:col-span-5">
               <span
                 class="text-[11px] tracking-ultra uppercase text-muted block mb-4"
-                >La prima visita. Inizia qui.</span
+                >Your first visit starts here.</span
               >
               <h2
                 class="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight2 leading-[0.95] mb-10"
               >
-                Contattaci.
+                Contact Us.
               </h2>
 
               <div class="flex flex-col gap-8 text-[14px] leading-[1.8]">
                 <div>
                   <span
                     class="text-[10px] tracking-ultra uppercase text-muted block mb-1"
-                    >Indirizzo</span
+                    >Address</span
                   >
                   <p class="text-ink">
-                    Via Giacomo Leopardi 34<br />04019 Terracina (LT)
+                    Austin, Texas<br />United States
                   </p>
                 </div>
                 <div>
                   <span
                     class="text-[10px] tracking-ultra uppercase text-muted block mb-1"
-                    >Telefono</span
+                    >Phone</span
                   >
                   <a
-                    href="tel:+3806566959"
+                    href="tel:+1234567890"
                     class="text-ink hover:opacity-60 transition-opacity"
-                    >+380 656 6959</a
+                    >+1 (234) 567-890</a
                   >
                 </div>
                 <div>
@@ -750,17 +753,17 @@
                     >Email</span
                   >
                   <a
-                    href="mailto:amministrazione@studiodentisticodrangelucci.it"
+                    href="mailto:contact@austinartisticdental.com"
                     class="text-ink hover:opacity-60 transition-opacity break-all"
-                    >amministrazione@studiodentisticodrangelucci.it</a
+                    >contact@austinartisticdental.com</a
                   >
                 </div>
                 <div>
                   <span
                     class="text-[10px] tracking-ultra uppercase text-muted block mb-1"
-                    >Orari</span
+                    >Hours</span
                   >
-                  <p class="text-ink">Lunedì – Sabato<br />Su appuntamento</p>
+                  <p class="text-ink">Monday – Saturday<br />By appointment</p>
                 </div>
               </div>
             </div>
@@ -771,13 +774,13 @@
                   <label class="block">
                     <span
                       class="text-[10px] tracking-ultra uppercase text-muted block mb-1"
-                      >Nome e cognome</span
+                      >Full Name</span
                     >
                     <input
                       type="text"
                       name="name"
                       class="input-min"
-                      placeholder="Mario Rossi"
+                      placeholder="Jane Doe"
                       required
                     />
                   </label>
@@ -790,7 +793,7 @@
                       type="email"
                       name="email"
                       class="input-min"
-                      placeholder="mario@email.it"
+                      placeholder="jane@example.com"
                       required
                     />
                   </label>
@@ -800,30 +803,30 @@
                   <label class="block">
                     <span
                       class="text-[10px] tracking-ultra uppercase text-muted block mb-1"
-                      >Telefono</span
+                      >Phone</span
                     >
                     <input
                       type="tel"
                       name="phone"
                       class="input-min"
-                      placeholder="+39 000 000 0000"
+                      placeholder="+1 (555) 000-0000"
                     />
                   </label>
                   <label class="block">
                     <span
                       class="text-[10px] tracking-ultra uppercase text-muted block mb-1"
-                      >Motivo del contatto</span
+                      >Reason for Visit</span
                     >
                     <select
                       name="reason"
                       class="input-min appearance-none cursor-pointer"
                     >
-                      <option value="">Seleziona…</option>
-                      <option>Prima visita</option>
-                      <option>Implantologia</option>
-                      <option>Ortodonzia invisibile</option>
-                      <option>Igiene e prevenzione</option>
-                      <option>Altro</option>
+                      <option value="">Select a reason…</option>
+                      <option>First Consultation</option>
+                      <option>Dental Implants</option>
+                      <option>Invisible Orthodontics</option>
+                      <option>Hygiene & Prevention</option>
+                      <option>Other Inquiry</option>
                     </select>
                   </label>
                 </div>
@@ -831,13 +834,13 @@
                 <label class="block">
                   <span
                     class="text-[10px] tracking-ultra uppercase text-muted block mb-1"
-                    >Messaggio</span
+                    >Message</span
                   >
                   <textarea
                     name="message"
                     rows="4"
                     class="input-min resize-none"
-                    placeholder="Scrivi qui la tua richiesta…"
+                    placeholder="Write your message here…"
                   ></textarea>
                 </label>
 
@@ -851,8 +854,8 @@
                     required
                   />
                   <span
-                    >Ho letto e accetto la Privacy Policy e autorizzo il
-                    trattamento dei miei dati personali ai sensi del GDPR.</span
+                    >I have read and agree to the Privacy Policy and consent to
+                    the processing of my personal information.</span
                   >
                 </label>
 
@@ -860,7 +863,7 @@
                   type="submit"
                   class="submit-btn mt-2 inline-flex items-center gap-3 self-start rounded-full bg-ink text-paper px-8 py-4 text-[13px] font-medium tracking-wide transition-all duration-300 hover:bg-ink/80 hover:gap-4"
                 >
-                  Invia richiesta
+                  Send Request
                   <svg
                     width="16"
                     height="16"
@@ -876,8 +879,8 @@
                 </button>
 
                 <p id="formStatus" class="text-[12px] text-muted hidden">
-                  Grazie — la tua richiesta è stata ricevuta. Ti contatteremo a
-                  breve.
+                  Thank you — your request has been received. We will contact
+                  you shortly.
                 </p>
               </form>
             </div>
@@ -893,7 +896,7 @@
           >
             <div>
               <h4 class="text-[10px] tracking-ultra uppercase text-muted mb-5">
-                Studio
+                Practice
               </h4>
               <ul class="flex flex-col gap-3 text-[14px]">
                 <li>
@@ -903,26 +906,26 @@
                 </li>
                 <li>
                   <a href="#studio" class="hover:opacity-60 transition-opacity"
-                    >Lo Studio</a
+                    >About Us</a
                   >
                 </li>
                 <li>
                   <a
                     href="#trattamenti"
                     class="hover:opacity-60 transition-opacity"
-                    >Trattamenti</a
+                    >Treatments</a
                   >
                 </li>
                 <li>
                   <a href="#news" class="hover:opacity-60 transition-opacity"
-                    >News</a
+                    >Clinical Team</a
                   >
                 </li>
                 <li>
                   <a
                     href="#contatti"
                     class="hover:opacity-60 transition-opacity"
-                    >Contatti</a
+                    >Contact</a
                   >
                 </li>
               </ul>
@@ -930,42 +933,42 @@
 
             <div>
               <h4 class="text-[10px] tracking-ultra uppercase text-muted mb-5">
-                Aree cliniche
+                Clinical Areas
               </h4>
               <ul class="flex flex-col gap-3 text-[14px]">
                 <li>
                   <a
                     href="#trattamenti"
                     class="hover:opacity-60 transition-opacity"
-                    >Implantologia</a
+                    >Dental Implants</a
                   >
                 </li>
                 <li>
                   <a
                     href="#trattamenti"
                     class="hover:opacity-60 transition-opacity"
-                    >Ortodonzia invisibile</a
+                    >Invisible Orthodontics</a
                   >
                 </li>
                 <li>
                   <a
                     href="#trattamenti"
                     class="hover:opacity-60 transition-opacity"
-                    >Medicina estetica</a
+                    >Teeth Whitening</a
                   >
                 </li>
                 <li>
                   <a
                     href="#trattamenti"
                     class="hover:opacity-60 transition-opacity"
-                    >Igiene e prevenzione</a
+                    >Hygiene & Prevention</a
                   >
                 </li>
                 <li>
                   <a
                     href="#trattamenti"
                     class="hover:opacity-60 transition-opacity"
-                    >Tutti i trattamenti</a
+                    >All Treatments</a
                   >
                 </li>
               </ul>
@@ -973,33 +976,32 @@
 
             <div>
               <h4 class="text-[10px] tracking-ultra uppercase text-muted mb-5">
-                Sede
+                Location
               </h4>
               <p class="text-[14px] leading-[1.8]">
-                Via Giacomo Leopardi 34<br />
-                04019 Terracina (LT)<br />
-                Italia
+                Austin, Texas<br />
+                United States
               </p>
               <a
                 href="#contatti"
                 class="inline-block mt-3 text-[13px] underline underline-offset-4 decoration-line hover:decoration-ink transition-colors"
-                >Contatti</a
+                >Get in Touch</a
               >
             </div>
 
             <div>
               <h4 class="text-[10px] tracking-ultra uppercase text-muted mb-5">
-                Legale
+                Legal
               </h4>
               <ul class="flex flex-col gap-3 text-[14px]">
                 <li>
                   <a href="#" class="hover:opacity-60 transition-opacity"
-                    >Privacy policy</a
+                    >Privacy Policy</a
                   >
                 </li>
                 <li>
                   <a href="#" class="hover:opacity-60 transition-opacity"
-                    >Cookie policy</a
+                    >Cookie Policy</a
                   >
                 </li>
               </ul>
@@ -1007,17 +1009,16 @@
           </div>
 
           <div class="pt-12 md:pt-16 overflow-hidden">
-            <div class="watermark">Dr Angelucci</div>
+            <div class="watermark">Austin Artistic Dental</div>
           </div>
 
           <div
             class="pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-[11px] text-muted"
           >
             <span
-              >© 2026 Studio Dentistico Dr. Angelucci — Tutti i diritti
-              riservati.</span
+              >© 2026 Austin Artistic Dental — All rights reserved.</span
             >
-            <span>P.IVA 00000000000 · Terracina</span>
+            <span>Austin, Texas · Specialized Dentistry</span>
           </div>
         </div>
       </footer>

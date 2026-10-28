@@ -113,7 +113,7 @@ h1,h2,h3{
   transform: translate(4px, -4px);
 }
 
-/* ---------- Floating hover image (Trattamenti) ---------- */
+/* ---------- Floating hover image (Treatments) ---------- */
 .hover-img {
   position: fixed;
   top: 0;
@@ -273,9 +273,9 @@ h1,h2,h3{
   justify-content: center;
   gap: 10px;
   padding: 0 20px;
-  border: 1px solid #176a4b;
+  border: 1px solid #59176a;
   border-radius: 9999px;
-  background: #176a4b;
+  background: #52024b;
   color: #ffffff;
   font-size: 0.75rem;
   font-weight: 600;
@@ -285,7 +285,7 @@ h1,h2,h3{
   text-transform: uppercase;
   white-space: nowrap;
   box-shadow: 0 5px 16px rgb(23 106 75 / 20%);
-  mix-blend-mode: normal;
+  mix-blend-mode: difference;
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease,
@@ -393,9 +393,30 @@ h1,h2,h3{
   transform: rotate(45deg);
 }
 
+/* ---------- Site Logo ---------- */
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1;
+}
+.site-logo-img {
+  display: block;
+  height: 38px;
+  width: auto;
+  max-width: 170px;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .site-logo-img {
+    height: 44px;
+    max-width: 200px;
+  }
+}
+
 /* ---------- Footer watermark ---------- */
 .watermark {
-  font-size: clamp(4rem, 18vw, 18rem);
+  font-size: clamp(2.5rem, 9vw, 9rem);
   font-weight: 500;
   letter-spacing: -0.05em;
   line-height: 0.8;

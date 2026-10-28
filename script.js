@@ -342,11 +342,11 @@
       e.preventDefault();
       const submitBtn = form.querySelector(".submit-btn");
       if (submitBtn) {
-        submitBtn.textContent = "Invio in corso…";
+        submitBtn.textContent = "Sending…";
         submitBtn.disabled = true;
       }
       setTimeout(() => {
-        if (submitBtn) submitBtn.innerHTML = "Inviato ✓";
+        if (submitBtn) submitBtn.innerHTML = "Sent ✓";
         if (formStatus) formStatus.classList.remove("hidden");
         form.reset();
       }, 800);
