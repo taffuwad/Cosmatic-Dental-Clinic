@@ -268,24 +268,23 @@ h1,h2,h3{
 }
 .appointment-link {
   display: inline-flex;
-  min-height: 48px;
+  min-height: 50px;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 0 20px;
-  border: 1px solid #59176a;
+  gap: 11px;
+  padding: 0 22px;
+  border: 1px solid #52024b;
   border-radius: 9999px;
   background: #52024b;
   color: #ffffff;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  box-shadow: 0 5px 16px rgb(23 106 75 / 20%);
-  mix-blend-mode: difference;
+  box-shadow: 0 6px 18px rgb(82 2 75 / 24%);
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease,
@@ -293,19 +292,19 @@ h1,h2,h3{
     transform 0.2s ease;
 }
 .appointment-link:hover {
-  transform: scale(1.05);
-  border-color: #10583d;
-  background: #10583d;
-  box-shadow: 0 8px 20px rgb(23 106 75 / 28%);
+  transform: translateY(-2px);
+  border-color: #3d0038;
+  background: #3d0038;
+  box-shadow: 0 9px 22px rgb(82 2 75 / 32%);
 }
 .appointment-link:focus-visible {
-  outline: 3px solid #ffffff;
+  outline: 3px solid #c782d1;
   outline-offset: 3px;
-  box-shadow: 0 0 0 6px #176a4b;
+  box-shadow: 0 0 0 6px rgb(199 130 209 / 24%);
 }
 .appointment-icon {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   flex: 0 0 auto;
 }
 .burger-line {
